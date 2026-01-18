@@ -1,0 +1,17 @@
+clc;
+clear;
+close all;
+
+t = -3:0.01:3;
+
+% Rectangular signal
+x2 = zeros(size(t));
+idx = (t >= -1) & (t <= 1);
+x2(idx) = 1;
+
+% Plot
+plot(t, x2, 'LineWidth', 2);
+grid on;
+xlabel('t');
+ylabel('x2(t)');
+title('Rectangular Signal x2(t)');
